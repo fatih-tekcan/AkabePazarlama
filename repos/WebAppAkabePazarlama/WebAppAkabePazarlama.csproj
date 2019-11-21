@@ -84,9 +84,12 @@
     <Content Include="fonts\icomoon\icomoon\Read Me.txt" />
     <Content Include="fonts\icomoon\icomoon\style.css" />
     <Content Include="fonts\simple-line-icons\Simple-Line-Icons.svg" />
+    <Content Include="images\Akb_lg1.png" />
+    <Content Include="images\Akb_sld1.jpg" />
     <Content Include="images\bg-img-akb-1.jpg" />
     <Content Include="images\bg_1.5.jpg" />
     <Content Include="images\bg_1.8.jpg" />
+    <Content Include="images\bg_9.jpg" />
     <Content Include="images\full_image_3.jpg" />
     <Content Include="images\full_image_3_1.jpg" />
     <Content Include="images\loc.png" />

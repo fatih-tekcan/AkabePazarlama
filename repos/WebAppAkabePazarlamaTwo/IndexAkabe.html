@@ -27,10 +27,22 @@
                 column-count: 5;
             }
         }
+
+        .hakkimizda {
+            background-color: #3f5267 !important;
+            color: #74889e !important;
+            border-bottom-color: #1fb5f6 !important;
+            border-bottom: solid 2px;
+        }
+
+        .mavi {
+            color: #1fb5f6;
+        }
     </style>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/17dfc7dc74.js" crossorigin="anonymous"></script>
+    <!--<script src="https://kit.fontawesome.com/17dfc7dc74.js" crossorigin="anonymous"></script>-->
+    <script src="js/fontawsome.js"></script>
     <title>Akabe Pazarlama</title>
 </head>
 <body>
@@ -58,12 +70,12 @@
                             <a class="dropdown-item" href="#Kece">Keçe</a>
                             <a class="dropdown-item" href="#VKayisi">V Kayışı</a>
                             <a class="dropdown-item" href="#OtomotivKayisi">Otomotiv Kayışı</a>
-                            <a class="dropdown-item" href="#">Yapıştırıcı</a>
-                            <a class="dropdown-item" href="#">Kasnak</a>
-                            <a class="dropdown-item" href="#">Kaplin</a>
-                            <a class="dropdown-item" href="#">Zincir</a>
-                            <a class="dropdown-item" href="#">Dişli</a>
-                            <a class="dropdown-item" href="#">Mafsal İstavroz</a>
+                            <a class="dropdown-item" href="#Yapistirici">Yapıştırıcı</a>
+                            <a class="dropdown-item" href="#Kasnak">Kasnak</a>
+                            <a class="dropdown-item" href="#Kaplin">Kaplin</a>
+                            <a class="dropdown-item" href="#Zincir">Zincir</a>
+                            <a class="dropdown-item" href="#Disli">Dişli</a>
+                            <a class="dropdown-item" href="#MafsalIstavroz">Mafsal İstavroz</a>
 
                         </div>
                     </li>
@@ -119,7 +131,7 @@
             <div class="col-1 border"></div>
         </div>
         <!--  rulman bilgisi olacak  -->
-        <div id="Rulman" class="row p-4 f1f1f1 ">
+        <div id="Rulman" class="row p-4 f1f1f1 card-columns ">
             <div class="col-md-4 p-4">
                 <h2>Rulman</h2>
                 <br />
@@ -134,30 +146,33 @@
                     ORS, FAG, TIMKEN, SNR, NSK, URB, Koyo, SKF, BBC, RHP, GMB, INA, NTN marka rulmanları bizden temin edebilirsiniz.
                 </p>
             </div>
-            <div class="col-md-8">
-                <img src="img/MarkalarRulman.jpg" class="card" alt="Rulman" />
+            <div class="col-md-8 card">
+                <img src="img/MarkalarRulman.jpg" class="card-img" alt="Rulman" />
             </div>
         </div>
         <!-- Keçe Bilgisi Giriliyor -->
-        <div id="Kece" class="row p-4">
-            <div class="col-md-8">
-                <img src="img/MarkalarKece.jpg" class="card" alt="Keçe" />
+        <div id="Kece" class="row p-4 card-columns">
+
+            <div class="col-md-8 p-4 card">
+                <img src="img/MarkalarKece.jpg" class="card-img" alt="Keçe" />
             </div>
-            <div class="col-md-4">
+
+            <div class="col-md-4 p-4 ">
                 <h2>Keçe</h2>
-                <p>
+                <br />
+                <p class="">
                     Rulmanın dışına yağ sızması ve dışarıdan pislik girmesini önlemek için rulman keçeleri kullanılır.
                     Keçe bir makina parçasının dışarıyla olan temasını keser...
                 </p>
                 <p>SKT, FEKO, Suptex, FDT, Corteco marka keçeleri bizden temin edebilirsiniz.</p>
 
             </div>
-
         </div>
         <!-- V kayışı bilgileri -->
-        <div id="VKayisi" class="row p-4 f1f1f1">
-            <div class="col-md-4">
+        <div id="VKayisi" class="row p-4 f1f1f1 ">
+            <div class="col-md-4  ">
                 <h2>V Kayışı</h2>
+                <br />
                 <p>BANDO marka v kayışlarını bizden temin edebilirsiniz.</p>
             </div>
             <div class="col-md-8">
@@ -253,16 +268,290 @@
                 </div>
                 <!-- otomotiv kayışları için card bölümü bitiş -->
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 ">
                 <h2>Otomotiv Kayışı</h2>
                 <p>
                     Marş motorunun volan yoluyla krank milini çevirmeye başlamasıyla,
                     eksantrik mili de bu iki parça arasındaki bağlantıyı sağlayan kayış ya da zincir sayesinde dönmeye başlar.
                     Bu görevi üstlenen parça triger kayışıdır.
-                    <p>Contitech, Dayco marka otomotiv kayışlarını bizden temin edebilirsiniz.</p>
                 </p>
+                <p>Contitech, Dayco marka otomotiv kayışlarını bizden temin edebilirsiniz.</p>
             </div>
         </div>
+        <!-- Yapıştırııcılar -->
+        <div id="Yapistirici" class="row p-4 f1f1f1">
+            <div class="col-md-4">
+                <h2>Yapıştırıcılar</h2>
+                <p>BALDER, ALCON, SELSİL marka yapıştırıcıları bizden temin edebilirsiniz.</p>
+            </div>
+            <div class="col-md-8">
+                <!-- Card -->
+                <div class="card-columns">
+                    <div class="card p-4">
+                        <img src="img/Yapistiricilar/SelsilSprey_Boya.png" class="card-img-top" alt="Selsil Sprey Boya">
+
+                    </div>
+
+                    <div class="card">
+                        <img src="img/Yapistiricilar/Alkon_logo.jpg" class="card-img-top" alt="...">
+
+                    </div>
+                    <div class="card p-4">
+                        <img src="img/Yapistiricilar/balder_logo.jpg" class="card-img-top" alt="...">
+
+                    </div>
+
+                    <div class="card">
+                        <img src="img/Yapistiricilar/SelsilUrunColorSprey.png" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card p-3 text-right">
+                        <img src="img/Yapistiricilar/AlkonUrunPlastikCelik170x280.jpg" class="card-img-top" alt="...">
+
+                    </div>
+                    <div class="card p-3 text-right">
+                        <img src="img/Yapistiricilar/balderUrun150gr_min.jpg" class="card-img-top" alt="...">
+
+                    </div>
+                    <div class="card p-3 text-right">
+                        <img src="img/Yapistiricilar/selsilUrunDualValve.png" class="card-img-top" alt="...">
+
+                    </div>
+                </div>
+
+                <!-- Card -->
+
+
+            </div>
+
+        </div>
+        <!--Kasnak BÜLÜMÜ EKLENİYOR -->
+        <div id="Kasnak" class="row p-4">
+            <div class="col-md-8">
+                <!-- Kasnak için card bölümü -->
+                <div class="card-columns">
+
+                    <div class="card">
+                        <img src="img/Kasnak/Kasnak.jpg" class="card-img-top" alt="..">
+
+                    </div>
+                    <div class="card">
+                        <img src="img/Kasnak/Kasnak2.png" class="card-img-top" alt="..">
+
+                    </div>
+
+                </div>
+                <!-- Kasnak için card bölümü bitiş -->
+            </div>
+            <div class="col-md-4">
+                <h2>Kasnak</h2>
+
+
+            </div>
+        </div>
+        <!-- Kaplin Bölümü -->
+        <div id="Kaplin" class="row p-4 f1f1f1">
+            <div class="col-md-4">
+                <h2>Kaplin</h2>
+
+            </div>
+            <div class="col-md-8">
+                <!-- Card -->
+                <div class="card-columns">
+
+                    <div class="card">
+                        <img src="img/Kaplin/Kaplin.jpg" class="card-img-top" alt="...">
+                    </div>
+
+                    <div class="card p-4">
+                        <img src="img/Kaplin/Kaplin2.jpg" class="card-img-top" alt="...">
+                    </div>
+
+                    <div class="card">
+                        <img src="img/Kaplin/Kaplin3.jpg" class="card-img-top" alt="...">
+                    </div>
+
+                    <div class="card p-3 text-right">
+                        <img src="img/Kaplin/Kaplin4.png" class="card-img-top" alt="...">
+                    </div>
+
+                </div>
+
+                <!-- Card -->
+
+
+            </div>
+
+        </div>
+        <!-- Zincir bölümü -->
+        <div id="Zincir" class="row p-4">
+            <div class="col-md-8">
+                <!-- Kasnak için card bölümü -->
+                <div class="card-columns">
+
+                    <div class="card">
+                        <img src="img/Zincir/Zincir.jpg" class="card-img-top" alt="..">
+
+                    </div>
+                    <div class="card">
+                        <img src="img/Zincir/Zincir3.png" class="card-img-top" alt="..">
+
+                    </div>
+
+                </div>
+                <!-- Kasnak için card bölümü bitiş -->
+            </div>
+            <div class="col-md-4">
+                <h2>Zincir</h2>
+
+
+            </div>
+        </div>
+        <!-- Dişli Bölümü -->
+        <div id="Disli" class="row p-4 f1f1f1">
+            <div class="col-md-4">
+                <h2>Dişli</h2>
+
+            </div>
+            <div class="col-md-8">
+                <!-- Card -->
+                <div class="card-columns">
+
+                    <div class="card">
+                        <img src="img/Disli/Disli.png" class="card-img-top" alt="...">
+                    </div>
+
+                    <div class="card p-4">
+                        <img src="img/Disli/disli2.png" class="card-img-top" alt="...">
+                    </div>
+
+                    <div class="card">
+                        <img src="img/Disli/disli3.png" class="card-img-top" alt="...">
+                    </div>
+
+
+
+                </div>
+
+                <!-- Card -->
+
+
+            </div>
+
+        </div>
+        <!-- Mafsal İstavroz -->
+        <div id="MafsalIstavroz" class="row p-4 ">
+
+            <div class="col-md-8">
+                <!-- Card -->
+                <div class="card-columns">
+
+                    <div class="card">
+                        <img src="img/MafsalIstavroz/Gmw_logo.jpg" class="card-img-top" alt="...">
+                    </div>
+
+                    <div class="card p-4">
+                        <img src="img/MafsalIstavroz/Mafsal_İstavroz_gmw500x190.jpg" class="card-img-top" alt="...">
+                    </div>
+
+                </div>
+
+                <!-- Card -->
+            </div>
+
+            <div class="col-md-4">
+                <h2>Mafsal İstavroz</h2>
+
+            </div>
+        </div>
+
+        <!-- Hakkımızda Bölümü Yapılcak -->
+        <div id="Hakkimizda" class="row hakkimizda">
+            <div class="col-2 hakkimizda card mb-3"></div>
+            <div class="card mb-3 hakkimizda col-md-8 col-auto justify-content-lg-center" style="max-width: 100%;">
+                <div class="card-header text-center text-white">Hakkımızda</div>
+                <div class="card-body">
+                    <h5 class="card-title text-center text-white"><span class="text-danger">AKABE</span> PAZARLAMA</h5>
+                    <p class="card-text hakkimizda p-5 text-center blockquote">
+                        1990 yılında Faik ve  Fatih Boyacı tarafından şahıs firması olarak kurulan firmamız,  ORS rulmanları bayiliği ile  sektöre girmiştir. 1993 yılında kurumsallaşarak, AKABE YEDEK PARÇA LTD.ŞTİ. olarak  rulman, keçe,
+                        V kayış ve yapıştırıcı sektöründe Ege bölgesinde TOPTANC, PERAKENDECİ ve İMALATÇI müşterilerimize hizmetine devam etmiştir.
+
+                        Türkiye ekonomisinin gelişimine ve değişimine bağlı olarak, Ege bölgesi başta olmak üzere İç Anadolu, Akdeniz, kısmen Doğu ve Güneydoğu Anadoluda çeşitli zaman dilimlerinde hizmet vermiş, vermeye devam etmektedir.
+
+                        ORS rulmanları bayiliği başta olmak üzere diğer ithal rulman markaları ile rulman sektöründe,
+                    </p>
+
+
+
+                    <p class="card-text">
+                        <i class="far fa-thumbs-up mavi"></i>FEKO, SKT, SUPTEX, CORTECO markaları ile yağ keçeleri çeşidinde,
+
+                        CONTINENTAL, BANDO markası ile otomotiv ve sanayi kayışlarında,
+
+                        Uluslararası kalitesi  ispatlanmış  SELSİL markası ile endüstriyel yapıştırıcılarda,
+                    </p>
+
+
+
+                    <i class="far fa-thumbs-up mavi"></i>GMW markası ile mafsal istavroz çeşitlerinde, ithal ve yerli kasnak kaplin zincir ve zincir dişlilerde müşterilerimizin taleplerine cevap verebiliyoruz.
+
+
+
+                    Selsil marka  balata sprey, pas sökücü sprey, sıvı conta, alüminyum söktöründe yüksek mukavemetli silikon ve mastik favori ürünlerimizdendir. ORS rulmanları, Continental  kayış stok ve çeşit olarak iddialıyız.
+
+
+                    <br />
+                    <br />
+                    <h5 class="card-title text-white"> KALİTELİ ÜRÜN UYGUN FİYAT </h5>
+
+                    <p>
+                        <i class="far fa-thumbs-up mavi"></i> Özellikle bahsetmemiz gereken bir konuda firmamız 2011 yılı başından beri otomotiv triger kitleri,
+                        kendi markamız olan AKB ile müşterilerimizin hizmetine sunmuştur.
+                        Burada farkımız diğer markaların aksine içinde kullandığımız continental marka kayış ile hangi rulmanı kullandığımızı listemizde önceden beyan ediyor
+                        ve müşterimizi aldanmaması konusunda   uyarıyor  olmamızdır..
+                    </p>
+                    <p>
+                        <i class="far fa-thumbs-up mavi"></i>Müşterilerimizden gelen fiyat ve kalite memnuniyeti bizleride gururlandırmaktadır.  Bununla ilgili net fiyat listemize ana sayfamızdaki linkden ulaşabilirsiniz.
+
+                        22 yıllık müşterilerimizin firmamıza gösterdiği güven ve bağlılık bizim iftiharla sunabileceğimiz referanslarımızdır.
+                    </p>
+                </div>
+            </div>
+            <div class="col-2 hakkimizda card mb-3"></div>
+        </div>
+        <div id="iletisim" class="row hakkimizda d-flex justify-content-around">
+            <div class="col-md-4 card-body">
+                <h3 class="section-title text-center text-white">İletişim</h3>
+                <p class="card-text"><i class="fas fa-map-marker-alt mavi"></i> Fatih Cad. No: 228/A 1.Sanayi Sitesi 35110 Konak/İZMİR</p>
+                <p class="card-text"><i class="fas fa-phone-alt mavi"></i>  <i class="fas fa-fax mavi"></i> 0232 457 66 99(pbx)</p>
+                <p class="card-text"><i class="fas fa-globe mavi"></i><a style="text-decoration:none;text-decoration-color:none" href="http://akabepazarlama.com/index.html"> www.akabepazarlama.com</a></p>
+            </div>
+            <div class="col-md-4 card-body">
+               
+
+                <h3 class="card-title text-white"> Bize Yazın</h3>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name" class="sr-only">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="sr-only">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="sr-only">Message</label>
+                        <textarea class="form-control" id="message" rows="7" placeholder="Message"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" id="btn-submit" class="btn btn-send-message btn-md bg-danger" value="Send Message">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- google harita -->
+        <div class="row ">
+            <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d464.6098119878997!2d27.179460205389233!3d38.42969189324293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b96284b27e31d3%3A0xc324fa0e83465e7c!2sAkabe%20Yedek%20Par%C3%A7a%20San.Tic.Ltd.%C5%9Eti.!5e0!3m2!1str!2str!4v1575045127769!5m2!1str!2str"  height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          </div>
     </main>
 
     <!-- Optional JavaScript -->

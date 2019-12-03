@@ -12,6 +12,8 @@
         .navbar {
             opacity: 0.8;
             border-bottom: 1px solid #808080;
+            padding-bottom: 0px !important;
+            padding-top: 0px !important;
         }
 
         .f1f1f1 {
@@ -38,21 +40,47 @@
         .mavi {
             color: #1fb5f6;
         }
+
+        body {
+            position: relative;
+        }
+
+        #Rulman, #Kece, #VKayisi, #OtomotivKayisi,#ZamanKayis, #Yapistirici, #Kasnak, #Kaplin, #Zincir, #Disli, #MafsalIstavroz, #Hakkimizda, #iletisim {
+            padding-top: 6.5em !important;
+        }
+
+        li.active a {
+            color: #ff3b30 !important; /*kırmızı*/
+            text-decoration: underline;
+        }
+
+        .nav-link.active {
+            color: #ff3b30 !important; /*kırmızı*/
+            text-decoration-line: underline;
+        }
+
+
+        /*a:hover{
+            text-decoration-line:underline !important;
+            text-decoration-style:solid;
+            height: 2px;
+        }*/
     </style>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <!--<script src="https://kit.fontawesome.com/17dfc7dc74.js" crossorigin="anonymous"></script>-->
     <script src="js/fontawsome.js"></script>
     <title>Akabe Pazarlama</title>
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="120">
 
 
-    <nav class="navbar bg-light navbar  navbar-light navbar-expand-sm " style="z-index:100">
+    <nav class="navbar bg-light navbar  navbar-light navbar-expand-sm fixed-top" style="/*z-index:100*/">
         <!--fixed-top sayfayı navbarı yukarıda sabit tutar-->
         <div class="container-fluid">
 
-            <a href="#" class="navbar-brand"><img src="img/AkabePazarlama_logo.png" class="card w-75" alt="Akabe Pazarlama: rulman, keçe, v kayışı, otomotiv kayışı, yapıştırıcı, kasnak, kaplin, zincir, dişli, mafsal istavroz " /></a>
+            <a href="#AnaSayfa" class="navbar-brand"><img src="img/AkabePazarlama_logo.png" class="card w-75" alt="Akabe Pazarlama: rulman, keçe, v kayışı, otomotiv kayışı, yapıştırıcı, kasnak, kaplin, zincir, dişli, mafsal istavroz " /></a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
@@ -60,30 +88,34 @@
             <div id="navbarCollapse" class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href="#" class="nav-link active">Ana Sayfa</a>
+                        <a href="#AnaSayfa" class="nav-link active">Ana Sayfa</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" id="NavbarUrunler" role="button" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">Ürünler</a>
                         <div class="dropdown-menu bg-light" aria-labelledby="NavbarUrunler">
 
-                            <a class="dropdown-item" href="#Rulman">Rulman</a>
-                            <a class="dropdown-item" href="#Kece">Keçe</a>
+                            <a class="dropdown-item" href="#Rulman"><span>Rulman</span></a>
+                            <a class="dropdown-item" href="#Kece">Yağ Keçesi</a>
                             <a class="dropdown-item" href="#VKayisi">V Kayışı</a>
                             <a class="dropdown-item" href="#OtomotivKayisi">Otomotiv Kayışı</a>
-                            <a class="dropdown-item" href="#Yapistirici">Yapıştırıcı</a>
-                            <a class="dropdown-item" href="#Kasnak">Kasnak</a>
-                            <a class="dropdown-item" href="#Kaplin">Kaplin</a>
-                            <a class="dropdown-item" href="#Zincir">Zincir</a>
-                            <a class="dropdown-item" href="#Disli">Dişli</a>
+                            <a class="dropdown-item" href="#ZamanKayis">Sanayi Tipi Zaman Kayış</a>
                             <a class="dropdown-item" href="#MafsalIstavroz">Mafsal İstavroz</a>
+                            <a class="dropdown-item" href="#Yapistirici">Yapıştırıcı</a>
+                            <a class="dropdown-item" href="#Kasnak">Döküm V Kasnak </a>
+                            <a class="dropdown-item" href="#Kasnak">Burçlu V Kasnak </a>
+                            <a class="dropdown-item" href="#Kaplin">Kaplin ve Kaplin Lastikleri</a>
+                            <a class="dropdown-item" href="#Zincir">Zincir</a>
+                            <a class="dropdown-item" href="#Disli">Zincir Dişli</a>
+                            <a class="dropdown-item" href="#Disli">Triger Kasnak</a>
+
 
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Hakkımızda</a>
+                        <a href="#Hakkimizda" class="nav-link"><span>Hakkımızda</span></a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">İletişim</a>
+                        <a href="#iletisim" class="nav-link">İletişim</a>
                     </li>
                     <li class="nav-item">
                         <a href="http://www.akabepazarlama.com.tr/" target="_blank" class="nav-link">Bayi Giriş</a>
@@ -93,14 +125,15 @@
             </div>
         </div>
     </nav>
-    <!-- Carousel  bölümü burda başlıyor-->
+    <!--main-->
     <main class="container-fluid">
-        <div class="row ">
+        <!-- Carousel  bölümü burda başlıyor-->
+        <div id="AnaSayfa" class="row order-1" style="padding-top:110px;">
             <div class="col-1  border"></div>
             <div class="col-md-10 border p-md-4">
 
                 <!-- carrosel top -->
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -108,10 +141,10 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="img/Bayilikler8.jpg" class="d-block w-100" alt="...">
+                            <img src="img/Carousel/Bayiliklerfirst.jpg" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="img/Bayilikler6.jpg" class="d-block w-100" alt="...">
+                            <img src="img/Carousel/BayiliklerOnce.jpg" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
                             <img src="img/UrunSlide1.png" class="d-block w-100" alt="...">
@@ -131,7 +164,7 @@
             <div class="col-1 border"></div>
         </div>
         <!--  rulman bilgisi olacak  -->
-        <div id="Rulman" class="row p-4 f1f1f1 card-columns ">
+        <div id="Rulman" class="row p-4 f1f1f1 card-columns oerder-2">
             <div class="col-md-4 p-4">
                 <h2>Rulman</h2>
                 <br />
@@ -147,11 +180,11 @@
                 </p>
             </div>
             <div class="col-md-8 card">
-                <img src="img/MarkalarRulman.jpg" class="card-img" alt="Rulman" />
+                <img src="img/RulmanMarkalar.jpg" class="card-img" alt="Rulman" />
             </div>
         </div>
         <!-- Keçe Bilgisi Giriliyor -->
-        <div id="Kece" class="row p-4 card-columns">
+        <div id="Kece" class="row p-4 card-columns order-3">
 
             <div class="col-md-8 p-4 card">
                 <img src="img/MarkalarKece.jpg" class="card-img" alt="Keçe" />
@@ -173,13 +206,13 @@
             <div class="col-md-4  ">
                 <h2>V Kayışı</h2>
                 <br />
-                <p>BANDO marka v kayışlarını bizden temin edebilirsiniz.</p>
+                <p>CONTITECH marka V kayışlarını bizden temin edebilirsiniz.</p>
             </div>
             <div class="col-md-8">
                 <!-- Card -->
                 <div class="card-columns">
                     <div class="card">
-                        <img src="img/Bando_logo.png" class="card-img-top" alt="...">
+                        <img src="img/OtomotivKayisi/Contitech_logo2.png" class="card-img-top" alt="...">
                         <div class="card-body">
 
                             <!--<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>-->
@@ -187,29 +220,42 @@
                     </div>
 
                     <div class="card">
+                        <img src="img/Vkayisi/vkayisconti.jpg" class="card-img-top" alt="...">
+                    </div>
+
+
+
+                    <div class="card">
                         <img src="img/bando_Kayıs.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">V Kayışı</h5>
                             <!--<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>-->
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            <!--<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
                         </div>
                     </div>
                     <div class="card">
-                        <img src="img/Bondo_TirtirliVKayisi.png" class="card-img-top" alt="...">
+                        <img src="img/Vkayisi/vKayisPowerspan.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Tırtıllı V Kayışı</h5>
-                            <!--<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>-->
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                    </div>
 
-                    <div class="card">
-                        <img src="img/Bando_Vkayisi.jpg" class="card-img-top" alt="...">
+                            <p class="card-text">Powerspan</p>
+
+                        </div>
                     </div>
                     <div class="card p-3 text-right">
                         <img src="img/Bando_VKayisi2.jpg" class="card-img-top" alt="...">
 
                     </div>
+                    <div class="card">
+                        <img src="img/Bondo_TirtirliVKayisi.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <!--<h5 class="card-title">Tırtıllı V Kayışı</h5>-->
+                            <p class="card-text">Tırtıllı V Kayışı</p>
+
+                        </div>
+                    </div>
+
+
+
 
                 </div>
                 <!-- Card -->
@@ -223,48 +269,32 @@
             <div class="col-md-8">
                 <!-- otomotiv kayışları için card bölümü -->
                 <div class="card-columns">
-
-                    <div class="card">
-                        <img src="img/OtomotivKayisi/contitech_OtoKayisi.jpg" class="card-img-top" alt="Contitech">
-                        <div class="card-body">
-                            <!--<h5 class="card-title">Tırtıllı V Kayışı</h5>-->
-                            <!--<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>-->
-                            <!--<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="img/OtomotivKayisi/DaycoOtoKayisi.png" class="card-img-top" alt="Otomotiv Kayışı">
+                    <div class="card p-3 text-right">
+                        <img src="img/OtomotivKayisi/Contitech_logo.jpg" class="card-img-top" alt="Otomotiv Kayışı">
                     </div>
                     <div class="card p-3 text-right">
-                        <img src="img/OtomotivKayisi/DaycoOtoKayisi3.jpg" class="card-img-top" alt="Otomotiv Kayışı">
-
+                        <img src="img/OtomotivKayisi/trigerKayisiConti.jpg" class="card-img-top" alt="Otomotiv Kayışı">
                     </div>
                     <div class="card p-3 text-right">
-                        <img src="img/OtomotivKayisi/DaykoOtoKayisi2.jpg" class="card-img-top" alt="Otomotiv Kayışı">
+                        <img src="img/OtomotivKayisi/alternatorkayisiconti.jpg" class="card-img-top" alt="Otomotiv Kayışı">
+
+                    </div>
+
+                    <div class="card p-3 text-right">
+                        <img src="img/OtomotivKayisi/kits_multi-v-belt.jpg" class="card-img-top" alt="Otomotiv Kayışı">
 
                     </div>
 
                     <div class="card">
                         <img src="img/OtomotivKayisi/Contitech_logo2.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-
-                            <!--<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>-->
-                        </div>
                     </div>
 
-                    <div class="card">
-                        <img src="img/OtomotivKayisi/DaycoLogo.png" class="card-img-top" alt="Dayco">
-                        <div class="card-body">
-                            <!--<h5 class="card-title">V Kayışı</h5>-->
-                            <!--<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>-->
-                            <!--<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
-                        </div>
-                    </div>
+
+
                     <div class="card p-3 text-right">
-                        <img src="img/OtomotivKayisi/OtoKayisi.jpg" class="card-img-top" alt="Otomotiv Kayışı">
-
+                        <img src="img/OtomotivKayisi/PkKayis.jpg" class="card-img-top" alt="Otomotiv Kayışı">
                     </div>
+
                 </div>
                 <!-- otomotiv kayışları için card bölümü bitiş -->
             </div>
@@ -275,45 +305,109 @@
                     eksantrik mili de bu iki parça arasındaki bağlantıyı sağlayan kayış ya da zincir sayesinde dönmeye başlar.
                     Bu görevi üstlenen parça triger kayışıdır.
                 </p>
-                <p>Contitech, Dayco marka otomotiv kayışlarını bizden temin edebilirsiniz.</p>
+                <p>Contitech marka otomotiv kayışlarını bizden temin edebilirsiniz.</p>
+            </div>
+        </div>
+        <!-- Sanayi Tipi Zaman Kayışları bölümü başlıyor -->
+        <div id="ZamanKayis" class="row p-4 f1f1f1">
+            <div class="col-md-4">
+                <h2>Sanayi Tipi Zaman Kayış</h2>
+
+            </div>
+            <div class="col-md-8">
+                <!-- Card -->
+                <div class="card-columns">
+                    <div class="card p-4">
+                        <img src="img/OtomotivKayisi/Contitech_logo2.png" class="card-img-top" alt="Contitech">
+
+                    </div>
+
+                    <div class="card">
+                        <img src="img/ZamanKayis/3m.jpg" class="card-img-top" alt="3m zaman kayış">
+
+                    </div>
+                    <div class="card p-4">
+                        <img src="img/ZamanKayis/percinli.png" class="card-img-top" alt="Perçinli zaman kayış">
+
+                    </div>
+
+                    <div class="card">
+                        <img src="img/ZamanKayis/t5ZamanKayısi.jpg" class="card-img-top" alt="T5 zaman kayış">
+                    </div>
+                    <div class="card p-3 text-right">
+                        <img src="img/ZamanKayis/zamanKayisi.jpg" class="card-img-top" alt="...">
+
+                    </div>
+
+                </div>
+
+                <!-- Card -->
+
+
+            </div>
+
+        </div>
+        <!-- Mafsal İstavroz -->
+        <div id="MafsalIstavroz" class="row p-4 ">
+
+            <div class="col-md-8">
+                <!-- Card -->
+                <div class="card-columns">
+
+                    <div class="card">
+                        <img src="img/MafsalIstavroz/Gmw_logo.jpg" class="card-img-top" alt="...">
+                    </div>
+
+                    <div class="card p-4">
+                        <img src="img/MafsalIstavroz/Mafsal_İstavroz_gmw500x190.jpg" class="card-img-top" alt="...">
+                    </div>
+
+                </div>
+
+                <!-- Card -->
+            </div>
+
+            <div class="col-md-4">
+                <h2>Mafsal İstavroz</h2>
+
             </div>
         </div>
         <!-- Yapıştırııcılar -->
         <div id="Yapistirici" class="row p-4 f1f1f1">
             <div class="col-md-4">
                 <h2>Yapıştırıcılar</h2>
-                <p>BALDER, ALCON, SELSİL marka yapıştırıcıları bizden temin edebilirsiniz.</p>
+                <p>SELSİL, BALDER marka yapıştırıcıları bizden temin edebilirsiniz.</p>
             </div>
             <div class="col-md-8">
                 <!-- Card -->
                 <div class="card-columns">
                     <div class="card p-4">
-                        <img src="img/Yapistiricilar/SelsilSprey_Boya.png" class="card-img-top" alt="Selsil Sprey Boya">
+                        <img src="img/Yapistiricilar/Epoksi-Yapistirici-5dk.png" class="card-img-top" alt="Selsil Sprey Boya">
 
                     </div>
 
                     <div class="card">
-                        <img src="img/Yapistiricilar/Alkon_logo.jpg" class="card-img-top" alt="...">
+                        <img src="img/Yapistiricilar/Epoksi-Yapistirici-5dk.png" class="card-img-top" alt="...">
 
                     </div>
                     <div class="card p-4">
-                        <img src="img/Yapistiricilar/balder_logo.jpg" class="card-img-top" alt="...">
+                        <img src="img/Yapistiricilar/Genel-Amacli-Silikon.png" class="card-img-top" alt="...">
 
                     </div>
 
                     <div class="card">
+                        <img src="img/Yapistiricilar/sellock.png" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card p-3 text-right">
+                        <img src="img/Yapistiricilar/selsilConta.jpg" class="card-img-top" alt="...">
+
+                    </div>
+                    <div class="card p-3 text-right">
                         <img src="img/Yapistiricilar/SelsilUrunColorSprey.png" class="card-img-top" alt="...">
-                    </div>
-                    <div class="card p-3 text-right">
-                        <img src="img/Yapistiricilar/AlkonUrunPlastikCelik170x280.jpg" class="card-img-top" alt="...">
 
                     </div>
                     <div class="card p-3 text-right">
-                        <img src="img/Yapistiricilar/balderUrun150gr_min.jpg" class="card-img-top" alt="...">
-
-                    </div>
-                    <div class="card p-3 text-right">
-                        <img src="img/Yapistiricilar/selsilUrunDualValve.png" class="card-img-top" alt="...">
+                        <img src="img/Yapistiricilar/balder.jpg" class="card-img-top" alt="...">
 
                     </div>
                 </div>
@@ -331,19 +425,23 @@
                 <div class="card-columns">
 
                     <div class="card">
-                        <img src="img/Kasnak/Kasnak.jpg" class="card-img-top" alt="..">
-
+                        <img src="img/Kasnak/Burclukasnak.jpg" class="card-img-top" alt="..">
                     </div>
-                    <div class="card">
-                        <img src="img/Kasnak/Kasnak2.png" class="card-img-top" alt="..">
 
+                    <div class="card">
+                        <img src="img/Kasnak/DokumKasnak.jpg" class="card-img-top" alt="..">
                     </div>
 
                 </div>
                 <!-- Kasnak için card bölümü bitiş -->
             </div>
             <div class="col-md-4">
-                <h2>Kasnak</h2>
+                <h2>Döküm V Kasnak </h2>
+                <br />
+                <h2>Ve</h2>
+
+                <br />
+                <h2>Burçlu V Kasnak</h2>
 
 
             </div>
@@ -351,13 +449,21 @@
         <!-- Kaplin Bölümü -->
         <div id="Kaplin" class="row p-4 f1f1f1">
             <div class="col-md-4">
-                <h2>Kaplin</h2>
+                <h2>Kaplin ve Kaplin Lastikleri</h2>
 
             </div>
             <div class="col-md-8">
                 <!-- Card -->
                 <div class="card-columns">
-
+                    <div class="card">
+                        <img src="img/Kaplin/hassel-elastik-kaplin-takimi.jpeg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card">
+                        <img src="img/Kaplin/kaplinLastik.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card">
+                        <img src="img/Kaplin/KaplinRed.jpg" class="card-img-top" alt="...">
+                    </div>
                     <div class="card">
                         <img src="img/Kaplin/Kaplin.jpg" class="card-img-top" alt="...">
                     </div>
@@ -409,7 +515,10 @@
         <!-- Dişli Bölümü -->
         <div id="Disli" class="row p-4 f1f1f1">
             <div class="col-md-4">
-                <h2>Dişli</h2>
+                <h2>Zincir Dişli</h2>
+                <br />
+
+                <h2>Triger Kasnak</h2>
 
             </div>
             <div class="col-md-8">
@@ -417,18 +526,12 @@
                 <div class="card-columns">
 
                     <div class="card">
-                        <img src="img/Disli/Disli.png" class="card-img-top" alt="...">
+                        <img src="img/Disli/TrigerKasnak.jpg" class="card-img-top" alt="...">
                     </div>
 
                     <div class="card p-4">
-                        <img src="img/Disli/disli2.png" class="card-img-top" alt="...">
+                        <img src="img/Disli/Zincirdisli.jpg" class="card-img-top" alt="...">
                     </div>
-
-                    <div class="card">
-                        <img src="img/Disli/disli3.png" class="card-img-top" alt="...">
-                    </div>
-
-
 
                 </div>
 
@@ -438,31 +541,7 @@
             </div>
 
         </div>
-        <!-- Mafsal İstavroz -->
-        <div id="MafsalIstavroz" class="row p-4 ">
 
-            <div class="col-md-8">
-                <!-- Card -->
-                <div class="card-columns">
-
-                    <div class="card">
-                        <img src="img/MafsalIstavroz/Gmw_logo.jpg" class="card-img-top" alt="...">
-                    </div>
-
-                    <div class="card p-4">
-                        <img src="img/MafsalIstavroz/Mafsal_İstavroz_gmw500x190.jpg" class="card-img-top" alt="...">
-                    </div>
-
-                </div>
-
-                <!-- Card -->
-            </div>
-
-            <div class="col-md-4">
-                <h2>Mafsal İstavroz</h2>
-
-            </div>
-        </div>
 
         <!-- Hakkımızda Bölümü Yapılcak -->
         <div id="Hakkimizda" class="row hakkimizda">
@@ -519,14 +598,15 @@
             <div class="col-2 hakkimizda card mb-3"></div>
         </div>
         <div id="iletisim" class="row hakkimizda d-flex justify-content-around">
+            <div class="col-md-1"></div>
             <div class="col-md-4 card-body">
                 <h3 class="section-title text-center text-white">İletişim</h3>
                 <p class="card-text"><i class="fas fa-map-marker-alt mavi"></i> Fatih Cad. No: 228/A 1.Sanayi Sitesi 35110 Konak/İZMİR</p>
                 <p class="card-text"><i class="fas fa-phone-alt mavi"></i>  <i class="fas fa-fax mavi"></i> 0232 457 66 99(pbx)</p>
-                <p class="card-text"><i class="fas fa-globe mavi"></i><a style="text-decoration:none;text-decoration-color:none" href="http://akabepazarlama.com/index.html"> www.akabepazarlama.com</a></p>
+                <p class="card-text"><i class="fas fa-globe mavi"></i><a style="color:#74889e !important; " href="http://akabepazarlama.com/index.html"> www.akabepazarlama.com</a></p>
             </div>
             <div class="col-md-4 card-body">
-               
+
 
                 <h3 class="card-title text-white"> Bize Yazın</h3>
                 <form class="contact-form">
@@ -547,11 +627,14 @@
                     </div>
                 </form>
             </div>
+            <div class="col-md-1"></div>
         </div>
         <!-- google harita -->
         <div class="row ">
-            <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d464.6098119878997!2d27.179460205389233!3d38.42969189324293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b96284b27e31d3%3A0xc324fa0e83465e7c!2sAkabe%20Yedek%20Par%C3%A7a%20San.Tic.Ltd.%C5%9Eti.!5e0!3m2!1str!2str!4v1575045127769!5m2!1str!2str"  height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-          </div>
+
+            <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6251.04933925518!2d27.1759561982751!3d38.429348413741714!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc324fa0e83465e7c!2sAkabe%20Yedek%20Par%C3%A7a%20San.Tic.Ltd.%C5%9Eti.!5e0!3m2!1str!2str!4v1575288909904!5m2!1str!2str" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+        </div>
     </main>
 
     <!-- Optional JavaScript -->

@@ -73,6 +73,7 @@
     <Content Include="css\bootstrap-reboot.min.css" />
     <Content Include="css\bootstrap.css" />
     <Content Include="css\bootstrap.min.css" />
+    <Content Include="HtmlPage1.html" />
     <Content Include="img\AkabePazarlama_logo.png" />
     <Content Include="img\bando_Kayıs.png" />
     <Content Include="img\Bando_logo.png" />
@@ -84,6 +85,17 @@
     <Content Include="img\Bayilikler6.jpg" />
     <Content Include="img\Bayilikler8.jpg" />
     <Content Include="img\Bondo_TirtirliVKayisi.png" />
+    <Content Include="img\Disli\Disli.png" />
+    <Content Include="img\Disli\disli2.png" />
+    <Content Include="img\Disli\disli3.png" />
+    <Content Include="img\Kaplin\Kaplin.jpg" />
+    <Content Include="img\Kaplin\Kaplin2.jpg" />
+    <Content Include="img\Kaplin\Kaplin3.jpg" />
+    <Content Include="img\Kaplin\Kaplin4.png" />
+    <Content Include="img\Kasnak\Kasnak.jpg" />
+    <Content Include="img\Kasnak\Kasnak2.png" />
+    <Content Include="img\MafsalIstavroz\Gmw_logo.jpg" />
+    <Content Include="img\MafsalIstavroz\Mafsal_İstavroz_gmw500x190.jpg" />
     <Content Include="img\MarkalarKece.jpg" />
     <Content Include="img\MarkalarRulman.jpg" />
     <Content Include="img\OtomotivKayisi\Contitech_logo2.png" />
@@ -98,11 +110,21 @@
     <Content Include="img\UrunSlide3.jpg" />
     <Content Include="img\UrunSlide4.jpg" />
     <Content Include="img\UrunSlide6.jpg" />
+    <Content Include="img\Yapistiricilar\AlkonUrunPlastikCelik170x280.jpg" />
+    <Content Include="img\Yapistiricilar\Alkon_logo.jpg" />
+    <Content Include="img\Yapistiricilar\balderUrun150gr_min.jpg" />
+    <Content Include="img\Yapistiricilar\balder_logo.jpg" />
+    <Content Include="img\Yapistiricilar\SelsilSprey_Boya.png" />
+    <Content Include="img\Yapistiricilar\SelsilUrunColorSprey.png" />
+    <Content Include="img\Yapistiricilar\selsilUrunDualValve.png" />
+    <Content Include="img\Zincir\Zincir.jpg" />
+    <Content Include="img\Zincir\Zincir3.png" />
     <Content Include="IndexAkabe.html" />
     <Content Include="js\bootstrap.bundle.js" />
     <Content Include="js\bootstrap.bundle.min.js" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\fontawsome.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

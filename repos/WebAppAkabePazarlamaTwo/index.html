@@ -17,7 +17,9 @@
         }
 
         .f1f1f1 {
-            background-color: #f1f1f1;
+            /*background-color: #f1f1f1;*/
+            border-top:0.1rem solid #f1f1f1 !important;
+            border-bottom:0.2rem solid #f1f1f1 !important;
         }
 
         .card-columns {
@@ -80,6 +82,9 @@
                 }
             }
         }
+        .card{
+            border:none !important;
+        }
         /*a:hover{
             text-decoration-line:underline !important;
             text-decoration-style:solid;
@@ -101,7 +106,7 @@
         <div class="container-fluid ">
 
             <!--<a href="#AnaSayfa" class="card"><img src="img/AkabePazarlama_logo.png" class="card-img  under405 " alt="Akabe Pazarlama: rulman, keçe, v kayışı, otomotiv kayışı, yapıştırıcı, kasnak, kaplin, zincir, dişli, mafsal istavroz " /></a>-->
-            <a href="#AnaSayfa" class="fora" ><img src="img/AkabePazarlama_logo.png" class="card-img under405" alt="Akabe Pazarlama: rulman, keçe, v kayışı, otomotiv kayışı, yapıştırıcı, kasnak, kaplin, zincir, dişli, mafsal istavroz " /></a>
+            <a href="#AnaSayfa" class="fora" ><img src="img/AkabePazarlama_logoPng.png" class="card-img under405" alt="Akabe Pazarlama: rulman, keçe, v kayışı, otomotiv kayışı, yapıştırıcı, kasnak, kaplin, zincir, dişli, mafsal istavroz " /></a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
@@ -150,7 +155,7 @@
     <!--main-->
     <main class="container-fluid">
         <!-- Carousel  bölümü burda başlıyor-->
-        <div id="AnaSayfa" class="row order-1" style="        padding-top: 110px;">
+        <div id="AnaSayfa" class="row " style="padding-top: 110px;">
             <div class="col-1  border"></div>
             <div class="col-md-10 border p-md-4">
 
@@ -198,7 +203,7 @@
             <div class="col-1 border"></div>
         </div>
         <!--  rulman bilgisi olacak  -->
-        <div id="Rulman" class="row p-4 f1f1f1 card-columns oerder-2">
+        <div id="Rulman" class="row p-4 f1f1f1 card-columns ">
             <div class="col-md-4 p-4">
                 <h2>Rulman</h2>
                 <br />
@@ -213,15 +218,20 @@
                     ORS, FAG, TIMKEN, SNR, NSK, Koyo, SKF, RHP, GMB, INA, NTN marka rulmanları bizden temin edebilirsiniz.
                 </p>
             </div>
-            <div class="col-md-8 card">
-                <img src="img/RulmanMarkalar.jpg" class="card-img" alt="Rulman" />
+
+            <div class="col-md-8 ">
+                <div class="card">
+                    <img src="img/RulmanMarkalar.jpg" class="card-img" alt="Rulman" />
+                </div>
             </div>
         </div>
         <!-- Keçe Bilgisi Giriliyor -->
-        <div id="Kece" class="row p-4 card-columns order-3">
+        <div id="Kece" class="row p-4 card-columns ">
 
-            <div class="col-md-8 p-4 card">
-                <img src="img/MarkalarKece.jpg" class="card-img" alt="Keçe" />
+            <div class="col-md-8 ">
+                <div class="card">
+                    <img src="img/MarkalarKece.jpg" class="card-img" alt="Keçe" />
+                </div>
             </div>
 
             <div class="col-md-4 p-4 ">
@@ -247,10 +257,7 @@
                 <div class="card-columns">
                     <div class="card">
                         <img src="img/OtomotivKayisi/Contitech_logo2.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-
-                            <!--<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>-->
-                        </div>
+                        
                     </div>
 
                     <div class="card">
@@ -262,7 +269,7 @@
                     <div class="card">
                         <img src="img/bando_Kayıs.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">V Kayışı</h5>
+                            <p class="card-text">V Kayışı</p>
                             <!--<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>-->
                             <!--<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
                         </div>
@@ -306,15 +313,15 @@
                     <div class="card p-3 text-right">
                         <img src="img/OtomotivKayisi/Contitech_logo.jpg" class="card-img-top" alt="Otomotiv Kayışı">
                     </div>
-                    <div class="card p-3 text-right">
+                    <div class="card text-right">
                         <img src="img/OtomotivKayisi/trigerKayisiConti.jpg" class="card-img-top" alt="Otomotiv Kayışı">
                     </div>
-                    <div class="card p-3 text-right">
+                    <div class="card  text-right">
                         <img src="img/OtomotivKayisi/alternatorkayisiconti.jpg" class="card-img-top" alt="Otomotiv Kayışı">
 
                     </div>
 
-                    <div class="card p-3 text-right">
+                    <div class="card  text-right">
                         <img src="img/OtomotivKayisi/kits_multi-v-belt.jpg" class="card-img-top" alt="Otomotiv Kayışı">
 
                     </div>
@@ -325,7 +332,7 @@
 
 
 
-                    <div class="card p-3 text-right">
+                    <div class="card  text-right">
                         <img src="img/OtomotivKayisi/PkKayis.jpg" class="card-img-top" alt="Otomotiv Kayışı">
                     </div>
 
@@ -351,7 +358,7 @@
             <div class="col-md-8">
                 <!-- Card -->
                 <div class="card-columns">
-                    <div class="card p-4">
+                    <div class="card ">
                         <img src="img/OtomotivKayisi/Contitech_logo2.png" class="card-img-top" alt="Contitech">
 
                     </div>
@@ -360,7 +367,7 @@
                         <img src="img/ZamanKayis/3m.jpg" class="card-img-top" alt="3m zaman kayış">
 
                     </div>
-                    <div class="card p-4">
+                    <div class="card ">
                         <img src="img/ZamanKayis/percinli.png" class="card-img-top" alt="Perçinli zaman kayış">
 
                     </div>
@@ -368,7 +375,7 @@
                     <div class="card">
                         <img src="img/ZamanKayis/t5ZamanKayısi.jpg" class="card-img-top" alt="T5 zaman kayış">
                     </div>
-                    <div class="card p-3 text-right">
+                    <div class="card text-right">
                         <img src="img/ZamanKayis/zamanKayisi.jpg" class="card-img-top" alt="...">
 
                     </div>
@@ -392,7 +399,7 @@
                         <img src="img/MafsalIstavroz/Gmw_logo.jpg" class="card-img-top" alt="...">
                     </div>
 
-                    <div class="card p-4">
+                    <div class="card">
                         <img src="img/MafsalIstavroz/Mafsal_İstavroz_gmw500x190.jpg" class="card-img-top" alt="...">
                     </div>
 
@@ -415,7 +422,7 @@
             <div class="col-md-8">
                 <!-- Card -->
                 <div class="card-columns">
-                    <div class="card p-4">
+                    <div class="card ">
                         <img src="img/Yapistiricilar/Epoksi-Yapistirici-5dk.png" class="card-img-top" alt="Selsil Sprey Boya">
 
                     </div>
@@ -424,7 +431,7 @@
                         <img src="img/Yapistiricilar/Epoksi-Yapistirici-5dk.png" class="card-img-top" alt="...">
 
                     </div>
-                    <div class="card p-4">
+                    <div class="card ">
                         <img src="img/Yapistiricilar/Genel-Amacli-Silikon.png" class="card-img-top" alt="...">
 
                     </div>
@@ -432,15 +439,15 @@
                     <div class="card">
                         <img src="img/Yapistiricilar/sellock.png" class="card-img-top" alt="...">
                     </div>
-                    <div class="card p-3 text-right">
+                    <div class="card  text-right">
                         <img src="img/Yapistiricilar/selsilConta.jpg" class="card-img-top" alt="...">
 
                     </div>
-                    <div class="card p-3 text-right">
+                    <div class="card  text-right">
                         <img src="img/Yapistiricilar/SelsilUrunColorSprey.png" class="card-img-top" alt="...">
 
                     </div>
-                    <div class="card p-3 text-right">
+                    <div class="card  text-right">
                         <img src="img/Yapistiricilar/balder.jpg" class="card-img-top" alt="...">
 
                     </div>
@@ -502,7 +509,7 @@
                         <img src="img/Kaplin/Kaplin.jpg" class="card-img-top" alt="...">
                     </div>
 
-                    <div class="card p-4">
+                    <div class="card ">
                         <img src="img/Kaplin/Kaplin2.jpg" class="card-img-top" alt="...">
                     </div>
 
@@ -510,7 +517,7 @@
                         <img src="img/Kaplin/Kaplin3.jpg" class="card-img-top" alt="...">
                     </div>
 
-                    <div class="card p-3 text-right">
+                    <div class="card  text-right">
                         <img src="img/Kaplin/Kaplin4.png" class="card-img-top" alt="...">
                     </div>
 
@@ -563,7 +570,7 @@
                         <img src="img/Disli/TrigerKasnak.jpg" class="card-img-top" alt="...">
                     </div>
 
-                    <div class="card p-4">
+                    <div class="card ">
                         <img src="img/Disli/Zincirdisli.jpg" class="card-img-top" alt="...">
                     </div>
 
@@ -584,7 +591,7 @@
                 <div class="card-header text-center text-white">Hakkımızda</div>
                 <div class="card-body">
                     <h5 class="card-title text-center text-white"><span class="text-danger">AKABE</span> PAZARLAMA</h5>
-                    <p class="card-text hakkimizda p-5 text-center blockquote">
+                    <p class="card-text hakkimizda p-5  blockquote">
                         1990 yılında Faik ve  Fatih Boyacı tarafından şahıs firması olarak kurulan firmamız,  ORS rulmanları bayiliği ile  sektöre girmiştir. 1993 yılında kurumsallaşarak, AKABE YEDEK PARÇA LTD.ŞTİ. olarak  rulman, keçe,
                         V kayış ve yapıştırıcı sektöründe Ege bölgesinde TOPTANC, PERAKENDECİ ve İMALATÇI müşterilerimize hizmetine devam etmiştir.
 
@@ -647,7 +654,7 @@
                 <form class="contact-form">
                     <div class="form-group">
                         <label for="name" class="sr-only">Name</label>
-                        <input type="text" class="form-control" id="name" placeholder="Name">
+                        <input type="text" class="form-control" id="name" placeholder="İsim">
                     </div>
                     <div class="form-group">
                         <label for="email" class="sr-only">Email</label>
@@ -655,10 +662,10 @@
                     </div>
                     <div class="form-group">
                         <label for="message" class="sr-only">Message</label>
-                        <textarea class="form-control" id="message" rows="7" placeholder="Message"></textarea>
+                        <textarea class="form-control" id="message" rows="7" placeholder="Mesaj"></textarea>
                     </div>
                     <div class="form-group">
-                        <input type="submit" id="btn-submit" class="btn btn-send-message btn-md bg-danger text-white" value="Send Message">
+                        <input type="submit" id="btn-submit" class="btn btn-send-message btn-md bg-danger text-white" value="Gönder">
                     </div>
                 </form>
             </div>

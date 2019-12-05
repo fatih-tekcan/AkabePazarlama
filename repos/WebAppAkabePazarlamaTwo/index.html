@@ -10,7 +10,7 @@
     <!-- Bootstrap CSS -->
     <style>
         .navbar {
-            opacity: 0.8;
+            /*opacity: 0.8;*/
             border-bottom: 1px solid #808080;
             padding-bottom: 0px !important;
             padding-top: 0px !important;
@@ -43,9 +43,10 @@
 
         body {
             position: relative;
+            font-size:1.1rem!important;
         }
 
-        #Rulman, #Kece, #VKayisi, #OtomotivKayisi,#ZamanKayis, #Yapistirici, #Kasnak, #Kaplin, #Zincir, #Disli, #MafsalIstavroz, #Hakkimizda, #iletisim {
+        #Rulman, #Kece, #VKayisi, #OtomotivKayisi, #ZamanKayis, #Yapistirici, #Kasnak, #Kaplin, #Zincir, #Disli, #MafsalIstavroz, #Hakkimizda, #iletisim {
             padding-top: 6.5em !important;
         }
 
@@ -58,12 +59,31 @@
             color: #ff3b30 !important; /*kırmızı*/
             text-decoration-line: underline;
         }
+        .under405{
+            width:75% !important;
+            height:75%!important;
+        }
+        @media only screen and (max-width: 405px) {
+            .under405 {
+                width: 50% !important;
+                height: 50% !important;
+            }
 
-
+            @media only screen and (max-width: 405px) {
+                .fora {
+                    width: 270px !important;
+                }
+            }
+            @media only screen and (max-width: 360px) {
+                .fora {
+                    width: 230px !important;
+                }
+            }
+        }
         /*a:hover{
             text-decoration-line:underline !important;
             text-decoration-style:solid;
-            height: 2px;
+            height: 2px;x
         }*/
     </style>
 
@@ -78,13 +98,15 @@
 
     <nav class="navbar bg-light navbar  navbar-light navbar-expand-sm fixed-top" style="/*z-index:100*/">
         <!--fixed-top sayfayı navbarı yukarıda sabit tutar-->
-        <div class="container-fluid">
+        <div class="container-fluid ">
 
-            <a href="#AnaSayfa" class="navbar-brand"><img src="img/AkabePazarlama_logo.png" class="card w-75" alt="Akabe Pazarlama: rulman, keçe, v kayışı, otomotiv kayışı, yapıştırıcı, kasnak, kaplin, zincir, dişli, mafsal istavroz " /></a>
+            <!--<a href="#AnaSayfa" class="card"><img src="img/AkabePazarlama_logo.png" class="card-img  under405 " alt="Akabe Pazarlama: rulman, keçe, v kayışı, otomotiv kayışı, yapıştırıcı, kasnak, kaplin, zincir, dişli, mafsal istavroz " /></a>-->
+            <a href="#AnaSayfa" class="fora" ><img src="img/AkabePazarlama_logo.png" class="card-img under405" alt="Akabe Pazarlama: rulman, keçe, v kayışı, otomotiv kayışı, yapıştırıcı, kasnak, kaplin, zincir, dişli, mafsal istavroz " /></a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div id="navbarCollapse" class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
@@ -128,7 +150,7 @@
     <!--main-->
     <main class="container-fluid">
         <!-- Carousel  bölümü burda başlıyor-->
-        <div id="AnaSayfa" class="row order-1" style="padding-top:110px;">
+        <div id="AnaSayfa" class="row order-1" style="        padding-top: 110px;">
             <div class="col-1  border"></div>
             <div class="col-md-10 border p-md-4">
 
@@ -150,7 +172,7 @@
                             <img src="img/Carousel/BayiliklerSecond.jpg" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="img/Carousel/UrunSlide1.png" class="d-block w-100" alt="...">
+                            <img src="img/Carousel/UrunSlide1.jpg" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
                             <img src="img/Carousel/UrunlerLinear.jpg" class="d-block w-100" alt="...">
@@ -188,7 +210,7 @@
                     Rulmanlar bilya, makara, masura veya iğne şeklinde olabilir. Rulmanlı yataklar içinde kullanılan rulmana göre isimlendirilirler.
                 </p>
                 <p>
-                    ORS, FAG, TIMKEN, SNR, NSK, URB, Koyo, SKF, BBC, RHP, GMB, INA, NTN marka rulmanları bizden temin edebilirsiniz.
+                    ORS, FAG, TIMKEN, SNR, NSK, Koyo, SKF, RHP, GMB, INA, NTN marka rulmanları bizden temin edebilirsiniz.
                 </p>
             </div>
             <div class="col-md-8 card">
@@ -612,10 +634,11 @@
         <div id="iletisim" class="row hakkimizda d-flex justify-content-around">
             <div class="col-md-1"></div>
             <div class="col-md-4 card-body">
-                <h3 class="section-title text-center text-white">İletişim</h3>
+                <h3 class="card-title text-white align">İletişim</h3>
                 <p class="card-text"><i class="fas fa-map-marker-alt mavi"></i> Fatih Cad. No: 228/A 1.Sanayi Sitesi 35110 Konak/İZMİR</p>
                 <p class="card-text"><i class="fas fa-phone-alt mavi"></i>  <i class="fas fa-fax mavi"></i> 0232 457 66 99(pbx)</p>
                 <p class="card-text"><i class="fas fa-globe mavi"></i><a style="color:#74889e !important; " href="http://akabepazarlama.com/index.html"> www.akabepazarlama.com</a></p>
+                
             </div>
             <div class="col-md-4 card-body">
 
@@ -635,7 +658,7 @@
                         <textarea class="form-control" id="message" rows="7" placeholder="Message"></textarea>
                     </div>
                     <div class="form-group">
-                        <input type="submit" id="btn-submit" class="btn btn-send-message btn-md bg-danger" value="Send Message">
+                        <input type="submit" id="btn-submit" class="btn btn-send-message btn-md bg-danger text-white" value="Send Message">
                     </div>
                 </form>
             </div>
@@ -645,7 +668,7 @@
         <div class="row ">
 
             <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6251.04933925518!2d27.1759561982751!3d38.429348413741714!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc324fa0e83465e7c!2sAkabe%20Yedek%20Par%C3%A7a%20San.Tic.Ltd.%C5%9Eti.!5e0!3m2!1str!2str!4v1575288909904!5m2!1str!2str" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-
+            
         </div>
     </main>
 

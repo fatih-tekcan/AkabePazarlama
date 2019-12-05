@@ -82,6 +82,7 @@
     <Content Include="img\Carousel\BayiliklerSecond.jpg" />
     <Content Include="img\Carousel\UrunlerLinear.jpg" />
     <Content Include="img\Carousel\UrunlerYatakliRulman.jpg" />
+    <Content Include="img\Carousel\UrunSlide1.jpg" />
     <Content Include="img\Disli\TrigerKasnak.jpg" />
     <Content Include="img\Disli\Zincirdisli.jpg" />
     <Content Include="img\Kaplin\hassel-elastik-kaplin-takimi.jpeg" />
@@ -103,7 +104,6 @@
     <Content Include="img\OtomotivKayisi\PkKayis.jpg" />
     <Content Include="img\OtomotivKayisi\trigerKayisiConti.jpg" />
     <Content Include="img\RulmanMarkalar.jpg" />
-    <Content Include="img\Carousel\UrunSlide1.png" />
     <Content Include="img\Carousel\UrunSlide6.jpg" />
     <Content Include="img\Vkayisi\vkayisconti.jpg" />
     <Content Include="img\Vkayisi\vKayisPowerspan.jpg" />
@@ -120,7 +120,7 @@
     <Content Include="img\ZamanKayis\zamanKayisi.jpg" />
     <Content Include="img\Zincir\Zincir.jpg" />
     <Content Include="img\Zincir\Zincir3.png" />
-    <Content Include="IndexAkabe.html" />
+    <Content Include="index.html" />
     <Content Include="js\bootstrap.bundle.js" />
     <Content Include="js\bootstrap.bundle.min.js" />
     <Content Include="js\bootstrap.js" />

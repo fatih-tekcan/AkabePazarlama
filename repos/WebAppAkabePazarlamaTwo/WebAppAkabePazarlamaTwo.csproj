@@ -74,7 +74,9 @@
     <Content Include="css\bootstrap.css" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="HtmlPage1.html" />
+    <Content Include="Kaliplar.html" />
     <Content Include="img\AkabePazarlama_logo.png" />
+    <Content Include="img\AkabePazarlama_logoPng.png" />
     <Content Include="img\bando_Kayıs.png" />
     <Content Include="img\Bando_VKayisi2.jpg" />
     <Content Include="img\Bondo_TirtirliVKayisi.png" />

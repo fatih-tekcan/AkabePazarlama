@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .kutu{
+            width:20rem;
+            height:5rem;
+            background-color:antiquewhite;
+        }
+    </style>
+    
+    <meta charset="utf-8" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.9/angular-material.min.css">
+    <title>AngularJs10_ng-hide_ng-show_ng-if</title>
+</head>
+<body ng-app="myApp" ng-controller="myCont">
+    <div ng-show="true" class="kutu">ng-show="true"</div><hr />
+    <div ng-show="false" class="kutu">ng-show="false"</div><hr />
+    <div ng-hide="true" class="kutu"> ng-hide="true"</div><hr />
+    <div ng-hide="false" class="kutu">ng-hide="false"</div>
+    <div ng-hide="myint==10">
+        <input type="number" name="name" value="" ng-model="myint" placeholder="10 olunca kaybolacak." />
+    </div>
+    <hr />
+    <div ng-show="myint!=10">
+        <input type="number" name="name" value="" ng-model="myint" placeholder="10 olunca kaybolacak." />
+    </div>
+    <button ng-click="gosterGizle()" class="btn btn-dark btn-lg">{{btntxt}}</button>
+    <div ng-show="dshow">butona göre gösterilip gizlecek alan.
+    ng-show ve ng-hide display:none yapar</div>
+    <div ng-if="dshow">ng-if kullanıldı butona göre gösterilip gizlecek alan.
+    ng-if kullanılınca elementleri tamamen kaldırdı.</div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <script>
+        var app = angular.module("myApp", []);
+        app.controller("myCont", function ($scope) {
+            $scope.dshow = true;
+            $scope.btntxt = "Gizle";
+            $scope.gosterGizle = function () {
+                $scope.dshow = !$scope.dshow;
+                if ($scope.dshow == false)
+                    $scope.btntxt = "Göster";
+                else
+                    $scope.btntxt = "Gizle";
+            }
+        });
+    </script>
+</body>
+</html>

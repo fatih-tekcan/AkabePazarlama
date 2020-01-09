@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <!--<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.9/angular-material.min.css">-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+<body class="bg-dark text-white container" ng-app="myApp" ng-controller="myCtrl">
+    <div>   {{deger}}</div>
+    <p> {{deger}}</p>
+    <h1> {{deger}}</h1>
+
+    <input type="text" name="name" value="" ng-model="kutu" />
+
+    <button class="btn bg-primary" ng-click="uyariVer()"> Uyarı Ver  </button>
+    <button class="btn bg-primary" ng-click="uyariVer2(kutu)"> Uyarı Ver  </button>
+   
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <script>
+        var ctrl1 = angular.module("myApp", []);
+        ctrl1.controller("myCtrl", function ($scope) {
+            $scope.deger = "controller denemesi";
+            $scope.kutu = "1a234567789";//input text e başlangıçca sadece rakam girince sonrasında da rakam dışında giriş kabul etmedi
+            $scope.uyariVer = function () {
+                alert($scope.kutu);
+            }
+            $scope.uyariVer2 = function (a) {
+                alert(a);
+            }
+        });
+        
+
+    </script>
+</body>
+</html>

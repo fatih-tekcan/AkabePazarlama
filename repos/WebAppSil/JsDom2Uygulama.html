@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>javascript uygulama</title>
+
+    <style>
+        li{
+            /*list-style:none;*/
+            /*text-decoration:line-through*/
+            /*text-decoration:underline*/
+        }
+    </style>
+</head>
+<body>
+    <h1>    To List</h1>
+    <ul id="toDo">
+        <li id="item_1"><input type="checkbox" name="name" value="" />6:00 kalkış     </li>
+        <li id="item_2"><input type="checkbox" name="name" value="" />7:00 kalkış     </li>
+        <li id="item_3"><input type="checkbox" name="name" value="" />8:00 kalkış     </li>
+        <li id="item_4"><input type="checkbox" name="name" value="" />9:00 kalkış     </li>
+        <li id="item_5"><input type="checkbox" name="name" value="" />10:00 kalkış     </li>
+        <li id="item_6"><input type="checkbox" name="name" value="" />11:00 kalkış     </li>
+        <li id="item_7"><input type="checkbox" name="name" value="" />12:00 kalkış     </li>
+        <li id="item_8"><input type="checkbox" name="name" value="" />13:00 kalkış     </li>
+        <li id="item_9"><input type="checkbox" name="name" value="" />14:00 kalkış     </li>
+        <li id="item_10"><input type="checkbox" name="name" value="" />15:00 kalkış     </li>
+        <li id="item_11"><input type="checkbox" name="name" value="" />16:00 kalkış     </li>
+        <li id="item_12"><input type="checkbox" name="name" value="" />17:00 kalkış     </li>
+        <li id="item_13"><input type="checkbox" name="name" value="" />22:00 kalkış     </li>
+        <li id="item_14"><input type="checkbox" name="name" value="" />23:00 kalkış     </li>
+        <li id="item_15"><input type="checkbox" name="name" value="" id="15" />24:00 kalkış     </li>
+    </ul>
+
+    <br />  <br />
+    Checkbox: <input type="checkbox" id="myCheck">
+
+    <button onclick="check()">Check Checkbox</button>
+    <button onclick="uncheck()">Uncheck Checkbox</button>
+    <a onclick="aclick(1)" href="#">content</a><br />
+    <a onclick="aclick(2)" href="#">content2</a><br />
+    <a onclick="aclick(3)" href="#">content3</a>
+</body>
+</html>
+
+<script>
+    //1. işlem list-style:none yapılacak
+    var tolist = document.querySelector('#toDo').querySelectorAll('li');
+    for(i=0;i<tolist.length;i++)
+    { tolist[i].style.listStyle = 'none'; }
+
+
+    //2.tüm liste elemanlarının üzerini çizelim.
+    var tolist = document.querySelector('#toDo').querySelectorAll('li');
+    for(i=0;i<tolist.length;i++)
+    { /*tolist[i].style.textDecoration = 'line-through'*/ }
+
+    //for yerine forEach Kullanımı.
+    tolist.forEach(function (item) {
+        item.style.textDecoration = 'underline';
+    })
+
+    //3. işlem server saatine göre işaretleme yapılacak.
+    var tolist = document.querySelector('#toDo').querySelectorAll('li');
+    (new Date()).getHours()
+    for (i = 0; i < tolist.length; i++)
+    {
+        if (parseInt(tolist[i].textContent.substring(0, 2)) < (new Date()).getHours())
+        {
+            tolist[i].style.textDecoration = 'line-through';
+            tolist[i].querySelector('input').checked = true;
+           
+        }
+
+    }
+     console.log("? "+tolist[1].querySelectorAll('input').check );
+    //4.
+    document.getElementById("15").checked = 'true'
+
+    //.5örnek
+
+    function check() {
+  document.getElementById("myCheck").checked = true;
+}
+
+    function uncheck() {
+  document.getElementById("myCheck").checked = false;
+    }
+    //seçime göre css değiştiriyoruz.
+    function aclick(a) {
+        console.log(a);
+        tolist.forEach(function (item) {
+            item.style.backgroundColor = 'white';
+    })
+        if (a == 1) { document.getElementById('item_1').style.backgroundColor='green'; }
+        if (a == 2) { document.getElementById('item_2').style.backgroundColor='green'; }
+        if (a == 3) { document.getElementById('item_3').style.backgroundColor='green'; }
+    }
+</script>

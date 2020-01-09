@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+<body class="bg-dark text-white container" ng-app="myApp" ng-controller="myCtrl">
+
+    <ul class="">
+        <li ng-repeat="item in names">{{item}}</li>
+    </ul>
+
+    <select class="custom-select">
+        <option value="value" ng-repeat="name in names">{{name}}</option>
+    </select>
+
+
+
+
+    <h1>filter Kullanımı</h1>
+    <hr />
+    <br />
+    <input type="text" name="name" value="" ng-model="arama" />
+    <ul class="">
+        <li ng-repeat="item in names | filter:arama">{{item}}</li>
+    </ul>
+
+    <select class="custom-select">
+        <option value="value" ng-repeat="name in names| filter:arama">{{name}}</option>
+    </select>
+    <hr />
+    <p>Çoklu Veri Kullanımı</p>
+    <ul>
+        <li ng-repeat="item in persons"><input type="checkbox" name="name" value="" />Ad: {{item.ad}} Yas: {{item.yas}}</li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script>
+        var app = angular.module("myApp", []);
+        app.controller("myCtrl", function ($scope) {
+
+            $scope.names = ["fatih", "hasan", "hakan", "Harun", "ahmet", "murat", "ramazan", "mustafa"];
+            $scope.persons = [{ "ad": "Fatih", "yas": 30 }, { "ad": "hasan", "yas": 32 }, { "ad": "hakan", "yas": 30 }, { "ad": "harun", "yas": 40 }];
+        });
+    </script>
+</body>
+</html>

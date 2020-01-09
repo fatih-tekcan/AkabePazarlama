@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Angular Js</title>
+    <meta lang="tr" />
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.9/angular-material.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body ng-app="">
+    
+    <div class="container">
+        <h1>Tecrübeler</h1>
+        <p>farklı div lerde ng-app="" tanımlamaları yapıldığında sadece ilk tanımlama için angularjs çalıştı</p>
+        <p> ng-controller="ctrlName" gibi tanımlamalar yapınca angularjs çalışmadı.</p>
+
+        
+    </div>
+    
+    
+    <div  class="container" >
+
+        <h2>Angular Example 1</h2>
+        <p>
+            <blockquote>
+                AngularJS Extends HTML<br />
+                AngularJS extends HTML with ng-directives.<br />
+
+                The ng-app directive defines an AngularJS application.<br />
+
+                The ng-model directive binds the value of HTML controls (input, select, textarea) to application data.<br />    
+
+                The ng-bind directive binds application data to the HTML view.  
+            </blockquote>
+        </p>
+        <input type="text" ng-model="name" placeholder="adınızı giriniz." />
+        <p>Merhaba Sayın {{name}}</p>
+    </div>
+
+    <div class="container bg-info" >
+        <h1>Angular Example 2 AngularJS Directives</h1>
+        <p>
+            As you have already seen, AngularJS directives are HTML attributes with an ng prefix.
+            <br />
+            The ng-init directive initializes AngularJS application variables.
+        </p>
+        <h1>ng-init ng-bind kullamı</h1>
+        <div ng-app="" ng-init="Ad='Fatih'">
+            <p>Senin Adın: <span ng-bind="Ad"></span></p>
+            <p>FirstName : {{Ad}}</p>
+            <input type="text" ng-model="txtAd"/>
+        </div>
+
+      
+
+
+        <div data-ng-app="" data-ng-init="firstName='murat'">
+            <p>  explorer eski sürümler tanıması için data-ng-app="" şeklinde referans edilir.</p>
+            <p>The name is <span data-ng-bind="firstName"></span></p>
+
+        </div>
+
+    </div>
+    
+    <div class="container bg-primary" ng-controller="ctrThree"  ng-init="ad='fatih'">
+
+        <p>The name is <span ng-bind="ad"></span></p>
+        <p>The Surname is <span ng-bind="ad"></span></p>
+        <h1>{{ad}}</h1>
+        <p>7+4={{4+7}}</p>
+    </div>
+  
+    <div>
+        <!-- Angular Material Dependencies -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular-animate.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular-aria.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular-messages.min.js"></script>
+
+        <!-- Angular Material Javascript now available via Google CDN; version 1.1.9 used here -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.9/angular-material.min.js"></script>
+        <!--bootstrap cdn-->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </div>
+</body>
+</html>

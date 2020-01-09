@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JavaScript Etiket Seçimi</title>
+
+    <style>
+        .kutu {
+            width: 200px;
+            height: 200px;
+            /*display: flex;*/
+            margin: 5px;
+            float: left;
+        }
+
+        #mavi {
+            background-color: blue;
+        }
+
+        #kirmizi {
+            background-color: red;
+            color:yellow
+
+        }
+
+        #sari {
+            background-color: yellow;
+            color:red;
+            
+        }
+        .sari{color:yellow;font-size:xx-large}
+        .kirmizi{color:red;font-size:xx-large}
+    </style>
+</head>
+<body>
+    <div id="mavi" class="kutu">
+        <p class="sari"> <b>  Sarı  </b></p>
+         
+        <p class="kirmizi"><b>Kırmızı</b> </p>
+    </div>
+    <div id="kirmizi" class="kutu">   </div>
+    <div id="sari" class="kutu">   </div>
+    <script>
+        var mavi = document.querySelector('#mavi');
+        document.getElementsByClassName('kutu');
+        var en = document.querySelector('#kirmizi');
+        en.style.backgroundColor = "green";//kırmızıyı yeşil yaptık.
+
+        //2.örnek
+        var mavi_div = document.getElementById('mavi');
+        var isBlue = false;
+        setInterval
+            (
+                function () {
+                    if (isBlue) {
+                       //console.log("red");
+                        mavi_div.style.backgroundColor = 'red';
+                        isBlue = false;
+                    }
+                    else {
+                        //console.log("yellow");
+                        mavi_div.style.backgroundColor = 'yellow';
+                        isBlue = true;
+                    }
+                    //isBlue = !isBlue;
+                },1000
+        );
+        var sari_div = document.getElementById('sari');
+        
+        var sayi = 200;
+        setInterval(function () {
+            sayi = sayi + 5;
+            sari_div.style.width = sayi.toString() + "px"; //sari.style.width + 1;
+            sari_div.style.height = sayi.toString() + "rem";
+            console.log(document.getElementById("sari").style.width + " yellow");
+            //document.getElementById("sari").style.width = "300px";
+        },1000);
+    </script>
+</body>
+</html>
